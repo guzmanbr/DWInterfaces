@@ -2,31 +2,44 @@ body{
     background-color: lightgray;
     font-family:Arial, Helvetica, sans-serif ;
 }
-
 h1,h2{
     font-family: 'Times New Roman', Times, serif;
 }
 p{
-    color: rgb(46, 45, 45);
+    color: rgb(48, 48, 48);
 }
 header{
     display: flex;
     margin: 40px;
     align-items: center;
+    background-color: bisque;
+}
+#divHeader{
+    display: flex;
+    background-color: blueviolet;
 }
 
-.boton1{
-    background-color: red;
-}
 #logo{
+    align-items: flex-start;
     width: 200px;
     height: 80px; 
 }
 #form1{
+    display: flex;
+    align-items: flex-start;
+    height: 80px;
     margin-left: 60px;
+    background-color: aqua;
+}
+.boton1{
+    background-color: red;
+    color: white;
+    height: 40px;
 }
 #idBuscador{
     width: 400px;
+    height: 30px;
+    margin-right: 5px;
 }
 .rojo{
     color: red;
@@ -34,4 +47,7 @@ header{
 }
 .subrayado{
     background-color: yellow;
+}
+img{
+    height: 10px;
 }
