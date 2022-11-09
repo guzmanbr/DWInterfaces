@@ -10,44 +10,107 @@ p{
 }
 header{
     display: flex;
-    margin: 40px;
+    margin: 10px;
     align-items: center;
-    background-color: bisque;
 }
+/*Header diplay flex para manejar los tres divs que van en su interior, posicionandolos en tres columnas*/
 #divHeader{
     display: flex;
-    background-color: blueviolet;
 }
-
+/*Primer div con flex start para que se alinee arriba*/
 #logo{
-    align-items: flex-start;
+    align-items: center;
     width: 200px;
     height: 80px; 
 }
+/*Display flex para posicionar el buscador y la lupa en columnas. Tambien alineados arriba*/
 #form1{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     height: 80px;
-    margin-left: 60px;
-    background-color: aqua;
+    margin-left: 120px;
+    margin-right: 50px;
+}
+#log-carrito{
+    background-color:aqua;
+    display: flex;
+    align-items: center;
+    
+}
+/*calse con fuente bold y roja*/
+.rojo{
+    color: red;
+    font-weight: bold;
+}
+/*clase subrayado*/
+.subrayado{
+    background-color: yellow;
 }
 .boton1{
+    border: 1px black solid;
     background-color: red;
     color: white;
-    height: 40px;
+    height: 35px;
 }
 #idBuscador{
     width: 400px;
     height: 30px;
     margin-right: 5px;
+    align-items: flex-start;
 }
-.rojo{
-    color: red;
-    font-weight: bold;
+.imgLupa{
+    height: 15px;
+    
 }
-.subrayado{
-    background-color: yellow;
+
+.container{
+    display: flex;
+
 }
-img{
-    height: 10px;
+
+aside{
+    flex: 15%;
 }
+
+aside nav div{
+    background-color: rgb(37, 78, 202);
+    height: 45px;
+    border: 1px solid black;
+    width: 90%;
+}
+aside nav div:hover{
+    background-color: rgb(35, 146, 186);
+}
+aside nav div p{
+    color: white;
+    margin-left: 5px;
+}
+
+main{
+    background-color: aqua;
+    flex: 85%;
+}
+
+.secciones{
+    display: flex;
+    margin-bottom: 60px;
+    background-color: blueviolet;
+    flex: 100%;
+}
+.secciones div{
+    background-color: aquamarine;
+    margin: 10px;
+}
+.secciones div p{
+    background-color: blueviolet;
+    margin: 10px;
+}
+.imagenSeccion{
+    justify-content: ;
+}
+
+
+
+
+
+
