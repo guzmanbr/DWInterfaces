@@ -100,13 +100,19 @@ main{
 .secciones div{
     background-color: aquamarine;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .secciones div p{
     background-color: blueviolet;
-    margin: 10px;
+    margin: auto;
+    margin-bottom: 3%;
+    width: 90%;
 }
 .imagenSeccion{
-    justify-content: ;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 
