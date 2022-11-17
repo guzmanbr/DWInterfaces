@@ -13,9 +13,6 @@ header{
     display: flex;
     margin: 10px;
     align-items: center;
-    background-color: rgba(37, 78, 202, 0.079);    
-    border-radius: 4px;
-
 }
 /*Header diplay flex para manejar los tres divs que van en su interior, posicionandolos en tres columnas*/
 #divHeader{
@@ -26,7 +23,6 @@ header{
     align-items: center;
     width: 200px;
     height: 80px; 
-    margin-left: 1%;
 }
 /*Display flex para posicionar el buscador y la lupa en columnas. Tambien alineados arriba*/
 #form1{
@@ -66,9 +62,11 @@ header{
 /*Container -----*/
 .container{
     display: flex;
+
 }
 
 /*barra nav lateral ---------*/
+
 aside{
     flex: 20%;
 }
@@ -89,6 +87,7 @@ aside nav div p{
 main{
     flex: 80%;
 }
+
 .secciones{
     display: flex;
     margin-bottom: 60px;
@@ -117,6 +116,7 @@ main{
     margin-bottom: 3%;
     width: 90%;
 }
+
 .imagenSeccion{
     margin: auto;
     margin-top: 3%;
@@ -130,7 +130,7 @@ footer{
     width: 95%;
     background-color: rgba(37, 78, 202, 0.079);
     align-items: flex-start;
-    border-radius: 4px;
+    border-radius: 2px;
     margin-bottom: 10px;
 }
 /*los 3  divs del footer*/

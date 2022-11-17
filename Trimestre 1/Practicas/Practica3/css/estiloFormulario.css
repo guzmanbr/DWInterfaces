@@ -63,9 +63,13 @@ header{
     height: 15px;
     
 }
+
+/*-------*/
+
 /*Container -----*/
 .container{
     display: flex;
+    background-color: aqua;
 }
 
 /*barra nav lateral ---------*/
@@ -89,7 +93,7 @@ aside nav div p{
 main{
     flex: 80%;
 }
-.secciones{
+form{
     display: flex;
     margin-bottom: 60px;
     flex: 100%;
@@ -122,47 +126,3 @@ main{
     margin-top: 3%;
     margin-bottom: 3%;
 }
-
-/*Footer ----------------*/
-footer{
-    display: flex;
-    margin: auto;
-    width: 95%;
-    background-color: rgba(37, 78, 202, 0.079);
-    align-items: flex-start;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-/*los 3  divs del footer*/
-footer > div{
-    margin: auto;
-    margin-bottom: 10px;
-    flex: 30%;
-    margin: 10px;
-}
-/*Contenido del div de subscripcion*/
-footer > div:nth-child(2) >div{
-    margin: 10px;
-}
-/*Contenido del div de redes*/
-footer > div:nth-child(3) {
-    display: flex;
-    margin: 10px;
-    flex-direction: column;
-}
-footer > div:nth-child(3) > a, a:link{
-    color: black;
-}
-
-/*calse con fuente bold y roja*/
-.rojo{
-    color: red;
-    font-weight: bold;
-}
-/*clase subrayado*/
-.subrayado{
-    background-color: yellow;
-}
-
-
-

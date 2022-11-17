@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/7575descarga.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>PcComponentsForm</title>
+    </head>
+    <body>
+        <img src="img/descarga.jfif" alt="LOGO" width="100" height="50">
+        <h1>Nuevos Articulos</h1>
+
+        <form action="enviar.php" method="post">
+        
+            <fieldset>
+                <legend>Información del articulos</legend>
+                <label for="articulo">Articulo</label>
+                <input type="text" name="articulo" id="descripcion" required="required" minlength="5" maxlength="100" size="210px"/><br/><br/>
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descripcion" id="desc" cols="202" rows="2" required></textarea><br/><br/>
+            </fieldset><br/>
+
+            <fieldset>
+                <legend>Clasificación de articulo</legend>
+                <label for="destacado">Marcar como destacado</label>
+                <input type="checkbox" name="dest" value="Si" id="destacado"/><br/><br/>
+
+                <label for="hardware">Hardware</label>
+                <input type="radio" name="tipo" value="hardware" id="hardware" /><br/>
+                <label for="software">Software</label>
+                <input type="radio" name="tipo" value="software" id="software"/><br/>
+                <label for="servicios">Servicios</label>
+                <input type="radio" name="tipo" value="servicios" id="servicios"/><br/><br/>
+
+                <label for="hardware">Subcategorías</label>
+                <select name="hardware">
+                    <option value="perifericos">Perifericos</option>
+                    <option value="cableado">Cableado</option>
+                    <option value="equipos">Equipos</option>
+                </select><br/><br/>
+            
+            </fieldset>
+           
+
+
+
+            
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpiar">
+        </form>
+    </body>
+</html>
