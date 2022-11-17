@@ -37,31 +37,55 @@
                 <form action="enviar.php" method="post">
                     <fieldset>
                         <legend>Información del articulos</legend>
-                        <label for="articulo">Articulo</label>
-                        <input type="text" name="articulo" id="descripcion" required="required" minlength="5" maxlength="100" size="210px"/><br/><br/>
-                        <label for="descripcion">Descripcion</label>
-                        <textarea name="descripcion" id="desc" cols="202" rows="2" required></textarea><br/><br/>
+                        <label for="articulo">Articulo</label><br>
+                        <input type="text" name="articulo" id="descripcion" required="required" minlength="5" maxlength="100" size="100px"/><br/><br/>
+                        <label for="descripcion">Descripcion</label><br>
+                        <textarea name="descripcion" id="desc" cols="97" rows="4" required></textarea><br/><br/>
                     </fieldset><br/>
         
                     <fieldset>
                         <legend>Clasificación de articulo</legend>
-                        <label for="destacado">Marcar como destacado</label>
-                        <input type="checkbox" name="dest" value="Si" id="destacado"/><br/><br/>
-        
-                        <label for="hardware">Hardware</label>
-                        <input type="radio" name="tipo" value="hardware" id="hardware" /><br/>
-                        <label for="software">Software</label>
-                        <input type="radio" name="tipo" value="software" id="software"/><br/>
-                        <label for="servicios">Servicios</label>
-                        <input type="radio" name="tipo" value="servicios" id="servicios"/><br/><br/>
-        
-                        <label for="hardware">Subcategorías</label>
-                        <select name="hardware">
-                            <option value="perifericos">Perifericos</option>
-                            <option value="cableado">Cableado</option>
-                            <option value="equipos">Equipos</option>
-                        </select><br/><br/>
+                        <div class="cont">
+                            <div class="labels">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                
+                                
+                                
+                                <label for="destacado">Marcar como destacado</label>
+                                <label for="hardware">Hardware</label>
+                                <label for="software">Software</label>
+                                <label for="servicios">Servicios</label>
+                                <label for="hardware">Subcategorías</label>
+                            </div>
+                            <div class="radio">
+                                <div><input type="checkbox" name="dest" value="Si" id="destacado"/><br/><br/>
+                                </div>
+                                <div><input type="radio" name="tipo" value="hardware" id="hardware" /><br/>
+                                </div>
+                                <div><input class="radio" type="radio" name="tipo" value="software" id="software"/><br/>
+                                </div>
+                                <div><input type="radio" name="tipo" value="servicios" id="servicios"/><br/><br/>
+                                </div>
+                                <div>                                <select name="hardware">
+                                    <option value="perifericos">Perifericos</option>
+                                    <option value="cableado">Cableado</option>
+                                    <option value="equipos">Equipos</option>
+                                </select></div>
+
+
+                            
+
+                            </div>
+                        </div>
+<br/><br/>
                     </fieldset>
+                    
+                    <input type="submit" class="boton1" value="Enviar"/>
+                    <input type="reset" class="boton1" value="Limpiar">
                 </form>
             </main>
         </div>
@@ -69,9 +93,9 @@
         <footer>
             <div>
                 <h3>Información</h3>
-                <h4>Direccion - C/ San Blas Nº 25</h4>
-                <h4>Telefono - 66654526</h4>
-                <h4>01010 Software</h4>
+                <h5>Direccion - C/ San Blas Nº 25</h5>
+                <h5>Telefono - 66654526</h5>
+                <h5>01010 Software</h5>
             </div>
             <div>
                 <h3>Subscripción</h3>
@@ -91,8 +115,5 @@
                 <a href="https://www.instagram.com/" target="_blank">Instagram</a>
             </div>
         </footer>
-
-            <input type="submit" value="Enviar"/>
-            <input type="reset" value="Limpiar">
     </body>
 </html>
