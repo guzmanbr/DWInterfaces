@@ -66,11 +66,13 @@ header{
 /*Container -----*/
 .container{
     display: flex;
+    width: 100%;
 }
-
-/*barra nav lateral ---------*/
 aside{
-    flex: 25%;
+    width: 20%;
+}
+main{
+    width: 80%;
 }
 aside nav div{
     background-color: rgb(37, 78, 202);
@@ -209,7 +211,6 @@ footer > div:nth-child(3) > a, a:link{
         margin: auto;
         text-align: center;
         width: 100%;
-        background-color: aqua;
     }
     main{
         display: flex;
