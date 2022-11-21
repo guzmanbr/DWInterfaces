@@ -9,11 +9,13 @@ p{
     color: rgb(48, 48, 48);
 }
 /* header ----------------*/
+/* header ----------------*/
 header{
     display: flex;
+    width: 95%;
     margin: 10px;
     align-items: center;
-    background-color: rgba(37, 78, 202, 0.079);    
+    background-color: rgba(12, 29, 79, 0.915);    
     border-radius: 4px;
 }
 /*Header diplay flex para manejar los tres divs que van en su interior, posicionandolos en tres columnas*/
@@ -23,17 +25,17 @@ header{
 /*Primer div con flex start para que se alinee arriba*/
 #logo{
     align-items: center;
-    width: 200px;
-    height: 80px; 
-    margin-left: 1%;
+    width: 10%;
+    height: 100%; 
+    margin-left: 3%;
 }
 /*Display flex para posicionar el buscador y la lupa en columnas. Tambien alineados arriba*/
 #form1{
     display: flex;
     align-items: center;
     height: 80px;
-    margin-left: 120px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 2%;
 }
 #log-carrito{
     display: flex;
@@ -44,9 +46,9 @@ header{
     border: 1px black solid;
     background-color:rgb(37, 78, 202);
     color: white;
-    height: 35px;
-    width: 80px;
-    margin: 5px;
+    height: 45%;
+    width: fit-content;
+    margin: 1%;
     border-radius: 2px;
 }
 .boton1:hover{
@@ -60,7 +62,6 @@ header{
 }
 .imgLupa{
     height: 15px;
-    
 }
 
 /*-------*/
@@ -73,6 +74,7 @@ header{
 /*barra nav lateral ---------*/
 .container{
     display: flex;
+    width: 100%;
 }
 aside{
     width: 20%;
@@ -101,9 +103,7 @@ aside nav div p{
     display: flex;
     flex-direction: column;
 }
-.labels :first-child(){
 
-}
 
 .radio > div{
     background-color: aqua;
@@ -115,15 +115,14 @@ aside nav div p{
 
 
 
-
-
 /*Footer ----------------*/
 footer{
     display: flex;
     margin: auto;
     width: 95%;
-    background-color: rgba(37, 78, 202, 0.079);
+    background-color:rgba(12, 29, 79, 0.915);
     align-items: flex-start;
+    color: white;
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -146,16 +145,33 @@ footer > div:nth-child(3) {
     flex-direction: column;
 }
 footer > div:nth-child(3) > a, a:link{
-    color: black;
+    color: white;
     margin: 5px;
 }
 
-/*calse con fuente bold y roja*/
-.rojo{
-    color: red;
-    font-weight: bold;
-}
-/*clase subrayado*/
-.subrayado{
-    background-color: yellow;
+
+
+
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+    }
+    header{
+        margin: auto;
+    }
+    aside {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+    aside nav div{
+        margin: auto;
+        text-align: center;
+    }
+    main{
+        width: 90%;
+        margin: auto;
+    }
+
+
 }
