@@ -1,6 +1,7 @@
 body{
     background-color: rgba(211, 211, 211, 0.652);
     font-family:Arial, Helvetica, sans-serif ;
+    box-sizing: content-box;
 }
 h1,h2,h3{
     font-family: 'Times New Roman', Times, serif;
@@ -10,27 +11,35 @@ p{
 }
 /* header ----------------*/
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% auto ;
+    width: 95%;
     margin: 10px;
     align-items: center;
+    background-color: rgb(12, 29, 79);    
+    border-radius: 4px;
 }
 /*Header diplay flex para manejar los tres divs que van en su interior, posicionandolos en tres columnas*/
 #divHeader{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 /*Primer div con flex start para que se alinee arriba*/
 #logo{
+
     align-items: center;
-    width: 200px;
-    height: 80px; 
+    width: 90%;
+    height: 80%; 
+    margin-left: 10%;
 }
 /*Display flex para posicionar el buscador y la lupa en columnas. Tambien alineados arriba*/
 #form1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 55% 30px;
     align-items: center;
     height: 80px;
-    margin-left: 120px;
-    margin-right: 50px;
+    margin-left: 5%;
+    margin-right: 2%;
 }
 #log-carrito{
     display: flex;
@@ -41,10 +50,10 @@ header{
     border: 1px black solid;
     background-color:rgb(37, 78, 202);
     color: white;
-    height: 35px;
-    margin: 5px;
+    height: 45%;
+    width: fit-content;
+    margin: 1%;
     border-radius: 2px;
-    
 }
 .boton1:hover{
     background-color: rgb(35, 146, 186);
@@ -57,18 +66,19 @@ header{
 }
 .imgLupa{
     height: 15px;
-    
+    width: 15px;
 }
+
 /*Container -----*/
 .container{
     display: flex;
-
+    width: 100%;
 }
-
-/*barra nav lateral ---------*/
-
 aside{
-    flex: 20%;
+    width: 20%;
+}
+main{
+    width: 80%;
 }
 aside nav div{
     background-color: rgb(37, 78, 202);
@@ -85,9 +95,8 @@ aside nav div p{
 }
 /*Main ----------------*/
 main{
-    flex: 80%;
+    flex: 75%;
 }
-
 .secciones{
     display: flex;
     margin-bottom: 60px;
@@ -96,10 +105,11 @@ main{
 .secciones div{
     background-color: rgba(255, 255, 255, 0.682);
     border-radius: 2px;
-    margin: 10px;
+    margin: 2%;
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 30%;
+    height: fit-content;
 }
 .secciones div:hover{
     background-color: rgba(255, 255, 255, 0.349);
@@ -116,9 +126,10 @@ main{
     margin-bottom: 3%;
     width: 90%;
 }
-
 .imagenSeccion{
     margin: auto;
+    width: 80%;
+    height: 30%;
     margin-top: 3%;
     margin-bottom: 3%;
 }
@@ -130,7 +141,7 @@ footer{
     width: 95%;
     background-color: rgba(37, 78, 202, 0.079);
     align-items: flex-start;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-bottom: 10px;
 }
 /*los 3  divs del footer*/
@@ -163,6 +174,85 @@ footer > div:nth-child(3) > a, a:link{
 .subrayado{
     background-color: yellow;
 }
+
+@media screen and (max-width: 1000px){
+    .container{
+        flex-direction: column;
+    }
+    header{
+        margin: auto;
+        flex-direction: column;
+    }
+    #logo{
+        margin-top: 1%;
+        width: 20%;
+    }
+    #divHeader{
+        flex-direction: column;
+    }
+    #log-carrito{
+        margin: auto;
+        margin-bottom: 1%;
+    }
+    aside {
+        width: 100%;
+        margin: auto;
+    }
+    aside nav div{
+        margin: auto;
+        text-align: center;
+    }
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    .secciones div{
+        width: 60%;
+        margin: auto;
+        margin-top: 1%;
+    }
+}  
+
+@media screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    header{
+        margin: auto;
+        flex-direction: column;
+    }
+    #logo{
+        margin-top: 1%;
+        width: 20%;
+    }
+    #divHeader{
+        flex-direction: column;
+    }
+    #log-carrito{
+        margin: auto;
+        margin-bottom: 1%;
+    }
+    aside {
+        width: 100%;
+        margin: auto;
+    }
+    aside nav div{
+        margin: auto;
+        text-align: center;
+    }
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    .secciones{
+        flex-direction: column;
+    }
+    .secciones div{
+        width: 60%;
+        margin: auto;
+        margin-top: 1%;
+    }
+} 
 
 
 
