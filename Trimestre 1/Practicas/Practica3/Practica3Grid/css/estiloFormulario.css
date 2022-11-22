@@ -1,7 +1,7 @@
 body{
-    background-color: rgba(211, 211, 211, 0.238);
+    background-color: rgba(211, 211, 211, 0.652);
     font-family:Arial, Helvetica, sans-serif ;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 h1,h2,h3{
     font-family: 'Times New Roman', Times, serif;
@@ -9,40 +9,43 @@ h1,h2,h3{
 p{
     color: rgb(48, 48, 48);
 }
-
 /* header ----------------*/
 header{
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% auto ;
     width: 95%;
     margin: 10px;
     align-items: center;
-    background-color: rgba(12, 29, 79, 0.915);    
+    background-color: rgb(12, 29, 79);    
     border-radius: 4px;
 }
-/*Header diplay flex para manejar los tres divs que van en su interior, posicionandolos en tres columnas*/
+
 #divHeader{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
 }
-/*Primer div con flex start para que se alinee arriba*/
+
 #logo{
+
     align-items: center;
-    width: 10%;
-    height: 100%; 
-    margin-left: 3%;
+    width: 90%;
+    height: 80%; 
+    margin-left: 10%;
 }
-/*Display flex para posicionar el buscador y la lupa en columnas. Tambien alineados arriba*/
+
 #form1{
-    display: flex;
+    display: grid;
+    grid-template-columns: 100% 30px;
     align-items: center;
     height: 80px;
     margin-left: 5%;
-    margin-right: 2%;
+    margin-right: 10%;
 }
 #log-carrito{
     display: flex;
     align-items: center;  
 }
-/*Estilo boton registrar y carrito*/
+
 .boton1{
     border: 1px black solid;
     background-color:rgb(37, 78, 202);
@@ -56,32 +59,27 @@ header{
     background-color: rgb(35, 146, 186);
 }
 #idBuscador{
-    width: 400px;
+    width: 98%;
     height: 30px;
     margin-right: 5px;
     align-items: flex-start;
+    background-color: antiquewhite;
 }
 .imgLupa{
     height: 15px;
+    width: 15px;
 }
-
+.lupa{
+    background-color: aquamarine;
+}
 
 /*Container -----*/
 .container{
-    display: flex;
-}
-
-/*barra nav lateral ---------*/
-.container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
     width: 100%;
 }
-aside{
-    width: 20%;
-}
-main{
-    width: 80%;
-}
+
 aside nav div{
     background-color: rgb(37, 78, 202);
     height: 55px;
@@ -95,34 +93,30 @@ aside nav div p{
     color: white;
     margin-left: 5px;
 }
+
 /*Main ----------------*/
 .cont{
-    display: flex;
+    display: grid;
 }
 .labels{
-    display: flex;
+    display: grid;
     flex-direction: column;
 }
-
 
 .radio > div{
     background-color: aqua;
     margin-bottom: 5px;
 }
 
-
-
-
-
-
 /*Footer ----------------*/
 footer{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     margin: auto;
     width: 95%;
-    background-color:rgba(12, 29, 79, 0.915);
-    align-items: flex-start;
+    background-color: rgb(12, 29, 79); 
     color: white;
+    align-items: flex-start;
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -131,44 +125,54 @@ footer > div{
     margin: auto;
     margin-bottom: 10px;
     flex: 30%;
-    margin: 5px;
-    text-align: center;
+    margin: 10px;
 }
 /*Contenido del div de subscripcion*/
 footer > div:nth-child(2) >div{
     margin: 10px;
 }
-
 /*Contenido del div de redes*/
 footer > div:nth-child(3) {
-    display: flex;
+    display: grid;
+    margin: 10px;
     flex-direction: column;
 }
 footer > div:nth-child(3) > a, a:link{
     color: white;
-    margin: 5px;
 }
-
 
 
 
 @media screen and (max-width: 1000px){
     .container{
-        flex-direction: column;
+        grid-template-columns: auto;
     }
     header{
         margin: auto;
+        grid-template-columns: auto;
+    }
+    #logo{
+        margin-top: 1%;
+        width: 20%;
+        margin: auto;
+    }
+    #form1{
+        grid-template-columns: 80% 30px;
     }
     #idBuscador{
-        width: 100px;
-        height: 30px;
-        margin-right: 5px;
-        align-items: flex-start;
+        width: 95%;
+    }
+    #log-carrito{
+        margin: auto;
+        height: 100%;
+        margin-bottom: 10%;
+    }
+    #divHeader{
+        grid-template-columns: auto;
     }
     aside {
         width: 100%;
         margin: auto;
-        margin-bottom: 2%;
     }
     aside nav div{
         margin: auto;

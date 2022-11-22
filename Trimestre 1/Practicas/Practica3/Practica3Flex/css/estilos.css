@@ -11,8 +11,7 @@ p{
 }
 /* header ----------------*/
 header{
-    display: grid;
-    grid-template-columns: 10% auto ;
+    display: flex;
     width: 95%;
     margin: 10px;
     align-items: center;
@@ -21,21 +20,18 @@ header{
 }
 /*Header diplay flex para manejar los tres divs que van en su interior, posicionandolos en tres columnas*/
 #divHeader{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
 }
 /*Primer div con flex start para que se alinee arriba*/
 #logo{
-
     align-items: center;
-    width: 90%;
-    height: 80%; 
-    margin-left: 10%;
+    width: 10%;
+    height: 100%; 
+    margin-left: 3%;
 }
 /*Display flex para posicionar el buscador y la lupa en columnas. Tambien alineados arriba*/
 #form1{
-    display: grid;
-    grid-template-columns: 55% 30px;
+    display: flex;
     align-items: center;
     height: 80px;
     margin-left: 5%;
@@ -66,9 +62,7 @@ header{
 }
 .imgLupa{
     height: 15px;
-    width: 15px;
 }
-
 /*Container -----*/
 .container{
     display: flex;
@@ -139,7 +133,8 @@ footer{
     display: flex;
     margin: auto;
     width: 95%;
-    background-color: rgba(37, 78, 202, 0.079);
+    background-color: rgb(12, 29, 79); 
+    color: white;
     align-items: flex-start;
     border-radius: 4px;
     margin-bottom: 10px;
@@ -162,7 +157,7 @@ footer > div:nth-child(3) {
     flex-direction: column;
 }
 footer > div:nth-child(3) > a, a:link{
-    color: black;
+    color: white;
 }
 
 /*calse con fuente bold y roja*/
