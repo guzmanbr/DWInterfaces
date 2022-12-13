@@ -44,17 +44,19 @@ header{
     align-items: center;  
 }
 /*Estilo boton registrar y carrito*/
-.boton1{
-    border: 1px black solid;
-    background-color:rgb(37, 78, 202);
-    color: white;
-    height: 45%;
-    width: fit-content;
-    margin: 1%;
-    border-radius: 2px;
+aside nav div{
+    background-color: rgb(37, 78, 202);
+    height: 55px;
+    border: 1px solid black;
+    width: 90%;
+    transition: 0.5s, border-radius 2s ;
+
 }
-.boton1:hover{
+aside nav div:hover{
     background-color: rgb(35, 146, 186);
+    font-size: 120%;
+    border-radius: 12px;
+    width: 92%;
 }
 #idBuscador{
     width: 400px;
@@ -182,3 +184,20 @@ footer > div:nth-child(3) > a, a:link{
 
 
 }
+
+@media print  { 
+    
+    header{
+        visibility: hidden;
+        display: none;
+    }
+    aside{
+        visibility: hidden;
+        display: none;
+    }
+    footer{
+        visibility: hidden;
+        display: none;
+    }
+
+} 
