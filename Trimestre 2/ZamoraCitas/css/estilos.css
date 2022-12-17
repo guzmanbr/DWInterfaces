@@ -1,0 +1,89 @@
+body{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(108, 4, 4);
+    display: flex;
+    height: 60px;
+    width: 100%;
+    color: white;
+}
+
+#logo{
+    flex: 10%;
+}
+#imglogo{
+    margin-left: 2%;
+    margin-top: 2.5%;
+    width: 40%;
+    height: 80%;
+}
+#logs{
+    flex: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+}
+#logs div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 5%;
+    margin-right: 3%;
+    height: 100%;
+}
+.logIn{
+    margin: 5px;
+}
+#logs div:hover{
+    background-color: rgba(200, 200, 200, 0.816);
+    box-shadow: 0px 2px 12px rgba(185, 185, 185, 0.263);
+    color: rgb(181, 10, 10);
+}
+
+
+/* Navegador */
+nav{
+    flex: 60%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+nav div:hover{
+    background-color: rgba(200, 200, 200, 0.816);
+    box-shadow: 0px 2px 12px rgba(185, 185, 185, 0.263);
+    color: rgb(181, 10, 10);
+}
+
+
+
+
+
+
+
+main{
+    
+    height: 100px;
+    width: 100%;
+}
+
+footer{
+    
+    height: 100px;
+    width: 100%;
+}
