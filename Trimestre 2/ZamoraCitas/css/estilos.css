@@ -8,11 +8,11 @@ body{
 /*---------------------------------------------------------*/
 /*---------------------------Header------------------------*/
 header{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     display: flex;
     height: 70px;
     width: 100%;
-    color: white;
+    color: rgb(181, 10, 10);
 }
 #logo{/*Div de logo*/
     display: flex;
@@ -70,7 +70,7 @@ nav div{
     height: 100%;
 }
 nav div:hover{
-    background-color: rgba(200, 200, 200, 0.24);
+    background-color: rgba(200, 200, 200, 0.962);
     box-shadow: 0px 2px 12px rgba(185, 185, 185, 0.263);
     color: rgb(181, 10, 10);
 }
